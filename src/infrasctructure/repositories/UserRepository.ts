@@ -13,6 +13,21 @@ export class UserRepository implements IUserRepository {
                 "SELECT * FROM users"
             );
 
+            // CONSULTAS EM BD
+            // campos específicos
+            // Filtragem (where)
+            // distinct / limit
+            // paginação
+            /*
+            #### CONSULTA BEM FEITA ####
+            SELECT us.id, us.name, us.email
+            FROM agenda_db.users as us
+            WHERE us.email is not null 
+            order by us.id
+            limit 10
+            offset 20
+            */
+
             return plainToInstance(UserDTO, result);
         } catch (error) {
             console.log(`Erro ao recuperar registros no bd: ${error}`);
