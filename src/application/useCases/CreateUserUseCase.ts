@@ -15,4 +15,8 @@ export class CreateUserUseCase {
 
         return await this.userRepository.save(user);
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d41d0d (Atualizando a tarefa, incluindo busca por id)
 }

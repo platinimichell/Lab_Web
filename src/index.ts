@@ -14,6 +14,12 @@ async function startApp() {
     const userRoutes = await import("@presentation/routes/userRoutes");
     app.use("/api", userRoutes.default);
 
+<<<<<<< HEAD
+=======
+    const contatoRoutes = await import("@presentation/routes/contatoRoutes");
+    app.use("/api", contatoRoutes.default);
+
+>>>>>>> 0d41d0d (Atualizando a tarefa, incluindo busca por id)
     const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => console.log(`Application is running on port ${PORT}`));
 }

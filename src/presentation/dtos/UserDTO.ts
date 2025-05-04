@@ -15,4 +15,11 @@ export class UserDTO {
         this.name = _name;
         this.email = _email;
     }
+<<<<<<< HEAD
+=======
+
+    //Editei daqui
+
+    
+>>>>>>> 0d41d0d (Atualizando a tarefa, incluindo busca por id)
 }
